@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-
     <!-- Header and Navigation -->
     <div id="header">
         <div class="container">
@@ -45,8 +42,8 @@
                     <!-- Tab Titles and Contents -->
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
-                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
-                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p> 
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p> 
                     </div>
 
                     <div class="tab-contents active-tab" id="skills">
@@ -159,12 +156,12 @@
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
                 tablink.classList.remove("active-link")
             }
-            for (tabcontent of tabcontents) {
+            for(tabcontent of tabcontents){
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
@@ -172,5 +169,4 @@
         }
     </script>
 </body>
-
 </html>
