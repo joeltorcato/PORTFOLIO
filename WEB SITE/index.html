@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY PORTFOLIO | JOEL TORCATO</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header and Navigation -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Text -->
+        <div class="header-text">
+          <p>DEV FULL STACK</p>
+          <h1>HI, I'M<span> JOEL</span><br />FROM PORTUGAL</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"></div>
+          <div class="about-col-2">
+            <!-- About Me Text -->
+            <h1 class="sub-title">ABOUT ME</h1>
+            <p>
+              hello! at 15 years old and based in portugal, i study Information
+              systems with the dream of becoming a full stack dev. i am
+              passionate about exploring web development and committed to
+              creating innovative solutions.
+            </p>
+
+            <!-- Tab Titles and Contents -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                SKILLS
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                EXPERIENCE
+              </p>
+              <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>WEB DEVELOPMENT</span><br />
+                  full stack development
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023</span><br />work from full stack development</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />
+                  i'm taking an information systems course
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">MY SERVICES</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>FULL STACK DEVELOPMENT</h2>
+            <p>
+              i have been studying full stack development for three months,
+              exploring HTML, CSS, javaScript. each challenge overcome fuels my
+              passion for creating innovative web solutions.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+          <!-- Work Items -->
+          <div class="work">
+            <img
+              src="/COMPONENTS/IMAGES/QR CODE.JPG"
+              alt="first image of the work"
+            />
+            <div class="layer">
+              <h3>QR CODE</h3>
+              <p>
+                built a project using html, javascript, and css where users
+                input a link, and the system generates a qr code dynamically.
+                this web-based tool enhances accessibility to links. the
+                minimalist design ensures user-friendly interaction, showcasing
+                my proficiency in front-end web development.
+              </p>
+              <a href="https://github.com/joeltorcato/QR.CODE"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="/COMPONENTS/IMAGES/TIC TAC TOE.JPG"
+              alt="first image of the work"
+            />
+            <div class="layer">
+              <h3>TIC TAC TOE</h3>
+              <p>
+                built tic-tac-toe with html, css, javascript. responsive,
+                interactive, sleek design. includes optional ai opponent.
+                showcases front-end skills.
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="/COMPONENTS/IMAGES/CALCULATOR.JPG"
+              alt="first image of the work"
+            />
+            <div class="layer">
+              <h3>CALCULATOR</h3>
+              <p>
+                created a calculator using html, javascript, and css. html
+                structured it and css styled. a responsive project displaying
+                front-end skills, allowing smooth mathematical operations in a
+                user-friendly interface.
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">SEE MORE</a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Information -->
+          <div class="contact-left">
+            <h1 class="sub-title">CONTACT ME</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>joeljjforct@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+351 938 112 685</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/joeltorcato/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/joeltorcato/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="/COMPONENTS/IMAGES/my-cv.pdf" download class="btn btn2"
+              >DOWNLOAD CV</a
+            >
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="NAME" placeholder="YOUR NAME" required />
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="YOUR EMAIL"
+                required
+              />
+              <textarea
+                name="MESSAGE"
+                rows="6"
+                placeholder="YOUR MESSAGE"
+              ></textarea>
+              <button type="submit" class="btn btn2">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © JOEL.</p>
+      </div>
+    </div>
+
+    <!-- Script for Tabs -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyo9zrxGJsLBxDVDcxZZQiYza6w_V_t--tXh7to0a3fV0kuUwWV8Aqh3Pajz8oasEw_/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
